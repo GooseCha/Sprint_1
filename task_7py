@@ -1,0 +1,13 @@
+def what_is_digital_root(num_start):
+    digital_root = 0
+    num = num_start
+    while num > 9:
+        digital_root = 0
+        while num > 0:
+            digital_root += num % 10
+            num = num // 10
+        num = digital_root
+    print("Цифровой корень числа", num_start, "равен", digital_root)
+
+
+what_is_digital_root(11563)
